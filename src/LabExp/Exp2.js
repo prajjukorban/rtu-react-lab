@@ -5,7 +5,8 @@ export default function Exp2() {
   return (
     <div>
         <h1 className='count'>{count}</h1>
-        <button onClick={()=>setcount(count+1)}>hgjlkl</button>
+        <button onClick={()=>setcount(count+1)}>increace</button>
+        <button onClick={()=>setcount(count-1)}>decrece</button>
         </div>
   )
 }
