@@ -1,27 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Exp2 from "./Exp2";
-import Exp3 from "./Exp3";
-import Exp6 from "./Exp6";
-import Exp7 from "./Exp7";
-import Exp10 from "./Exp10";
+import Page1 from "../comp/Page1";
+import Page2 from "../comp/Page2";
+import Page3 from "../comp/Page3";
+import Page4 from "../comp/Page4";
+
 function Exp5() {
     return (
         <div>
             <Router>
                 <ul>
-                    <li><Link to="Exp2" >Exp 2</Link></li>
-                    <li><Link to="Exp3" >Exp 3</Link></li>
-                    <li><Link to="Exp6" >Exp 6</Link></li>
-                    <li><Link to="Exp7" >Exp 7</Link></li>
-                    <li><Link to="Exp10" >Exp 10</Link></li>
+                    <li><Link to="Page1" >Page 1</Link></li>
+                    <li><Link to="Page2" >Page 2</Link></li>
+                    <li><Link to="Page3" >Page 3</Link></li>
+                    <li><Link to="Page4" >Page 4</Link></li>
                 </ul>
                 <Routes>
-                    <Route exact path="/Exp2" element={<Exp2 />} />
-                    <Route exact path="/Exp3" element={<Exp3 />} />
-                    <Route exact path="/Exp6" element={<Exp6 />} />
-                    <Route exact path="/Exp7" element={<Exp7 />} />
-                    <Route exact path="/Exp10" element={<Exp10 />} />
+                    <Route exact path="Page1" element={<Page1 />} />
+                    <Route exact path="Page2" element={<Page2 />} />
+                    <Route exact path="Page3" element={<Page3/>} />
+                    <Route exact path="Page4" element={<Page4 />} />
 
                 </Routes>
             </Router>
